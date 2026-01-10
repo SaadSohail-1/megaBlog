@@ -1,5 +1,5 @@
 import React from 'react'
-import appwriteService from '../appwrite/config'
+import appwriteService from '../appwrite/posts_config.js'
 import {PostCard, Container} from '../components'
 import { useState, useEffect } from 'react'
 

@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
-import appwriteService from '../appwrite/config'
-import authService from '../appwrite/auth'
+import appwriteService from '../appwrite/posts_config.js'
+import authService from '../appwrite/auth_service.js'
 import { Container, PostCard } from '../components'
 
 
