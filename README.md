@@ -67,9 +67,13 @@ VITE_APPWRITE_DATABASE_ID=your_database_id
 VITE_APPWRITE_COLLECTION_ID=your_collection_id
 VITE_APPWRITE_BUCKET_ID=your_bucket_id
 VITE_RTE_KEY = your_RTE_key
+```
 
 ## 📦 Installation & Setup
+
+```bash
 git clone https://github.com/your-username/megablog.git
 cd megablog
 npm install
 npm run dev
+```
