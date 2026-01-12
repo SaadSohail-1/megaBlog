@@ -6,7 +6,7 @@ import { useParams } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom'
 
 function EditPost() {
-    const [post, setpost] = useState([])
+    const [post, setpost] = useState({})
     const {slug} = useParams()
     const navigate = useNavigate()
 
