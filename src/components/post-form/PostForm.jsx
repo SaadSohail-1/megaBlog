@@ -4,12 +4,10 @@ import {Button, Input, Select, RTE} from '../index'
 import appwriteService from '../../appwrite/posts_config'
 import { useNavigate } from 'react-router-dom'
 import { useSelector } from 'react-redux'
-// import RTE from '../index'
-
 
 function PostForm({post}) {
 
-    const {register, handleSubmit, watch, setValue, control, getValues} = useForm({
+    const {register, handleSubmit, watch, setValue, control, getValues, reset} = useForm({
         defaultValues: {
             title: post?.title || "",
             slug: post?.slug || "",
@@ -20,6 +18,18 @@ function PostForm({post}) {
 
     const navigate = useNavigate()
     const userData = useSelector(state => state.auth.userData)
+
+    useEffect(()=> {
+        if (post) {
+            reset({
+                title: post.title || "",
+                slug: post.slug || "",
+                content: post.content || "",
+                status: post.status || "active"
+            })
+        }
+    }, [post, reset])
+
 
     const submit = async (data) => {
         if(post) {   //updating an existing post
