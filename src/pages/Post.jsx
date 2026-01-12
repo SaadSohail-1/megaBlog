@@ -58,7 +58,7 @@ export default function Post() {
                 <div className="w-full mb-6">
                     <h1 className="text-2xl font-bold text-white">{post.title}</h1>
                 </div>
-                <div className="browser-css text-start">
+                <div className="browser-css text-start text-gray-200">
                     {parse(post.content)}
                     </div>
             </Container>
