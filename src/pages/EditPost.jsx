@@ -1,12 +1,10 @@
-import React, { useEffect } from 'react'
-import { useState } from 'react'
-import { PostForm, Container } from '../components'
-import appwriteService from '../appwrite/posts_config.js'
-import { useParams } from 'react-router-dom'
-import { useNavigate } from 'react-router-dom'
+import { useEffect, useState } from 'react'
+import { PostForm, Container } from '@/components'
+import appwriteService from '@/appwrite/posts_config.js'
+import { useParams, useNavigate } from 'react-router-dom'
 
 function EditPost() {
-    const [post, setpost] = useState({})
+    const [post, setpost] = useState(null)
     const {slug} = useParams()
     const navigate = useNavigate()
 

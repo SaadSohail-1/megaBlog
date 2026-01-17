@@ -124,11 +124,21 @@ export class Service{
         if(!fileId) return null;
         return this.bucket.getFileView(
             conf.appwriteBucketId,
-            fileId
+            fileId,
+            1100,
+            0,
+            "center",
+            60,
+            // 0,
+            // "000000",
+            // 0,
+            // 1,
+            // 0,
+            // "FFFFFF",
+            // "webp"
         )
     }
 }
 
 const service = new Service()
-
 export default service

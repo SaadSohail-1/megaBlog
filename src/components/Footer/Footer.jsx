@@ -1,10 +1,9 @@
-import React from 'react'
 import { Link } from 'react-router-dom'
-import Logo from '../Logo'
+import Logo from '@/components/Logo'
 
 function Footer() {
   return (
-    <section className="relative overflow-hidden py-10 bg-slate-700">
+    <section className="relative overflow-hidden py-10 bg-gray-900 border-t border-gray-800">
             <div className="relative z-10 mx-auto max-w-7xl px-4">
                 <div className="-m-6 flex flex-wrap">
                     <div className="w-full p-6 md:w-1/2 lg:w-5/12">
@@ -13,21 +12,21 @@ function Footer() {
                                 <Logo width="100px" />
                             </div>
                             <div>
-                                <p className="text-sm text-white">
-                                    &copy; Copyright 2023. All Rights Reserved by DevUI.
+                                <p className="text-sm text-gray-400">
+                                    &copy; Copyright 2025. All Rights Reserved by MegaBlog.
                                 </p>
                             </div>
                         </div>
                     </div>
                     <div className="w-full p-6 md:w-1/2 lg:w-2/12">
                         <div className="h-full">
-                            <h3 className="tracking-px mb-9 text-xs font-semibold uppercase text-white">
+                            <h3 className="tracking-px mb-9 text-xs font-semibold uppercase text-gray-500">
                                 Company
                             </h3>
                             <ul>
                                 <li className="mb-4">
                                     <Link
-                                        className=" text-base font-medium text-gray-400 hover:text-white"
+                                        className="text-base font-medium text-gray-300 hover:text-blue-400 transition-colors"
                                         to="/"
                                     >
                                         Features
@@ -35,7 +34,7 @@ function Footer() {
                                 </li>
                                 <li className="mb-4">
                                     <Link
-                                        className=" text-base font-medium text-gray-400 hover:text-white"
+                                        className="text-base font-medium text-gray-300 hover:text-blue-400 transition-colors"
                                         to="/"
                                     >
                                         Pricing
@@ -43,7 +42,7 @@ function Footer() {
                                 </li>
                                 <li className="mb-4">
                                     <Link
-                                        className=" text-base font-medium text-gray-400 hover:text-white"
+                                        className="text-base font-medium text-gray-300 hover:text-blue-400 transition-colors"
                                         to="/"
                                     >
                                         Affiliate Program
@@ -51,7 +50,7 @@ function Footer() {
                                 </li>
                                 <li>
                                     <Link
-                                        className=" text-base font-medium text-gray-400 hover:text-white"
+                                        className="text-base font-medium text-gray-300 hover:text-blue-400 transition-colors"
                                         to="/"
                                     >
                                         Press Kit
@@ -62,13 +61,13 @@ function Footer() {
                     </div>
                     <div className="w-full p-6 md:w-1/2 lg:w-2/12">
                         <div className="h-full">
-                            <h3 className="tracking-px mb-9  text-xs font-semibold uppercase text-white">
+                            <h3 className="tracking-px mb-9 text-xs font-semibold uppercase text-gray-500">
                                 Support
                             </h3>
                             <ul>
                                 <li className="mb-4">
                                     <Link
-                                        className=" text-base font-medium text-gray-400 hover:text-white"
+                                        className="text-base font-medium text-gray-300 hover:text-blue-400 transition-colors"
                                         to="/"
                                     >
                                         Account
@@ -76,7 +75,7 @@ function Footer() {
                                 </li>
                                 <li className="mb-4">
                                     <Link
-                                        className=" text-base font-medium text-gray-400 hover:text-white"
+                                        className="text-base font-medium text-gray-300 hover:text-blue-400 transition-colors"
                                         to="/"
                                     >
                                         Help
@@ -84,7 +83,7 @@ function Footer() {
                                 </li>
                                 <li className="mb-4">
                                     <Link
-                                        className=" text-base font-medium text-gray-400 hover:text-white"
+                                        className="text-base font-medium text-gray-300 hover:text-blue-400 transition-colors"
                                         to="/"
                                     >
                                         Contact Us
@@ -92,7 +91,7 @@ function Footer() {
                                 </li>
                                 <li>
                                     <Link
-                                        className=" text-base font-medium text-gray-400 hover:text-white"
+                                        className="text-base font-medium text-gray-300 hover:text-blue-400 transition-colors"
                                         to="/"
                                     >
                                         Customer Support
@@ -103,13 +102,13 @@ function Footer() {
                     </div>
                     <div className="w-full p-6 md:w-1/2 lg:w-3/12">
                         <div className="h-full">
-                            <h3 className="tracking-px mb-9  text-xs font-semibold uppercase text-white">
+                            <h3 className="tracking-px mb-9 text-xs font-semibold uppercase text-gray-500">
                                 Legals
                             </h3>
                             <ul>
                                 <li className="mb-4">
                                     <Link
-                                        className=" text-base font-medium text-gray-400 hover:text-white"
+                                        className="text-base font-medium text-gray-300 hover:text-blue-400 transition-colors"
                                         to="/"
                                     >
                                         Terms &amp; Conditions
@@ -117,7 +116,7 @@ function Footer() {
                                 </li>
                                 <li className="mb-4">
                                     <Link
-                                        className=" text-base font-medium text-gray-400 hover:text-white"
+                                        className="text-base font-medium text-gray-300 hover:text-blue-400 transition-colors"
                                         to="/"
                                     >
                                         Privacy Policy
@@ -125,7 +124,7 @@ function Footer() {
                                 </li>
                                 <li>
                                     <Link
-                                        className=" text-base font-medium text-gray-400 hover:text-white"
+                                        className="text-base font-medium text-gray-300 hover:text-blue-400 transition-colors"
                                         to="/"
                                     >
                                         Licensing

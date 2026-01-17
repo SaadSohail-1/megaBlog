@@ -3,9 +3,9 @@ import './App.css'
 import { useDispatch } from 'react-redux'
 import authService from './appwrite/auth_service.js'
 import {login, logout} from './store/authSlice'
-import Header from './components/Header/Header'
-import Footer from './components/Footer/Footer'
+import {Header, Footer} from "@/components/"
 import { Outlet } from 'react-router-dom'
+import { Toaster } from 'react-hot-toast'
 
 function App() {
 
@@ -26,6 +26,7 @@ function App() {
 
   return !loading ? (
     <div className='min-h-screen flex flex-wrap content-between bg-gray-800'>
+      <Toaster position='bottom-center'/>
       <div className='w-full block'>
         <Header />
         <main>

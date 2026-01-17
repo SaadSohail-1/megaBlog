@@ -1,7 +1,7 @@
-import { AuthenticationFactor } from 'appwrite'
 import React, {useState, useEffect} from 'react'
 import { useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
+import SpinLoader from './Loader/SpinLoader'
 
 
 export default function Protected({children, authentication = true}) {
@@ -19,5 +19,5 @@ export default function Protected({children, authentication = true}) {
         setLoader(false)
     }, [authStatus, navigate, authentication])
 
-    return loader ? <h1>Loading...</h1> : <>{children}</>
+    return loader ? <SpinLoader message={"Loading..."}/> : <>{children}</>
 }
