@@ -129,7 +129,7 @@ function PostForm({ post }) {
                 <Input
                     label="Featured Image :"
                     type="file"
-                    className="mb-4 bg-gray-800 border-gray-700"
+                    className="mb-4 text-gray-400 bg-gray-800 border-gray-700"
                     accept="image/png, image/jpg, image/jpeg, image/gif"
                     {...register("image", { required: !post })}
                 />
